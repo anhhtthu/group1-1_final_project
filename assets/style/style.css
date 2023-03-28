@@ -181,10 +181,9 @@ body {
   overflow-x: hidden;
 }
 
-.container {
+.container:not(:nth-child(1)) {
   overflow: hidden;
 }
-
 img {
   -moz-user-select: none;
   -webkit-user-select: none;
