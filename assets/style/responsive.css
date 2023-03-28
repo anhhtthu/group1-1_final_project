@@ -1,0 +1,434 @@
+@media (max-width: 995px) {
+  .marquette-cont {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .marquette-item {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .caption > p {
+    font-size: 1rem;
+  }
+  .caption > small {
+    display: none;
+  }
+
+  .avatar {
+    margin-top: 20px;
+  }
+
+  .fa-heart,
+  .fa-cart-shopping {
+    padding-right: 75px;
+  }
+}
+
+@media (max-width: 562px) {
+  .caption > p {
+    font-size: 0.8rem;
+    margin-top: -4px;
+  }
+}
+@media (max-width: 450px) {
+  .marquette-cont {
+    width: 230px;
+  }
+}
+
+@media (min-width: 1199px) {
+  .product-cont {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .product-item {
+    width: 285px !important;
+    margin-right: 0rem !important;
+  }
+  .swiper-navBtn::before,
+  .swiper-navBtn::after {
+    font-size: 0;
+  }
+  #pagination {
+    display: none;
+  }
+  #swiperWrapperClass {
+    cursor: auto !important;
+    transform: none !important;
+  }
+}
+
+@media (max-width: 1399px) {
+  .product-item:last-child {
+    display: block;
+  }
+}
+
+@media (max-width: 1494px) {
+  .gallery-2 {
+    display: none;
+  }
+
+  .gallery-cont {
+    margin: 0 auto;
+    justify-content: flex-start;
+    width: 100%;
+    padding-left: 8rem;
+  }
+}
+
+@media (max-width: 1343px) {
+  .gallery-cont {
+    justify-content: center;
+    padding: 0;
+  }
+  .gallery-3 {
+    display: none;
+  }
+}
+
+/* MinhAnhResponsive */
+
+@media (max-width: 1399px) {
+  .text {
+    right: 120px;
+  }
+  .herocmt {
+    top: 70px;
+    left: 20px;
+  }
+  .tipSlides {
+    width: calc(100% - 23px);
+    transform: translateX(80px);
+  }
+  .slick-dots {
+    transform: translate(95%, 60px);
+    bottom: 0;
+    left: 0;
+  }
+  .slick-next {
+    right: 107px;
+  }
+  .slick-prev {
+    left: -7px;
+  }
+  .buttonsRoom button {
+    right: 327px;
+  }
+  .roomDot {
+    left: 54%;
+  }
+}
+
+@media (max-width: 1199px) {
+  .text {
+    right: 300px;
+  }
+  .herocmt {
+    top: 156px;
+    left: 0px;
+  }
+  .tipSlides {
+    transform: translateX(42px);
+  }
+  .slick-next {
+    right: 32px;
+  }
+  .roomDot {
+    left: 65%;
+  }
+  .buttonsRoom button {
+    right: 209px;
+  }
+}
+
+@media (max-width: 991px) {
+  .tipSlides {
+    width: calc(100% - 23px);
+    transform: translateX(152px);
+  }
+  .slick-arrow {
+    display: none !important;
+  }
+  .slick-dots {
+    transform: translate(10%, 60px);
+    bottom: 0;
+    left: 0;
+  }
+  .avatar {
+    margin-top: 20px;
+  }
+
+  .fa-heart,
+  .fa-cart-shopping {
+    padding-right: 75px;
+  }
+
+  .buttons button {
+    display: none;
+  }
+  .itemSlides {
+    width: 100%;
+    top: 500px;
+    background-position: 50% 50%;
+    background-size: 200%;
+    background-repeat: no-repeat;
+  }
+
+  .heRo {
+    height: 1200px;
+    /* background-color: #2ec1ac; */
+  }
+  .itemSlides:nth-child(2) {
+    transform: translate(-155%);
+  }
+  .itemSlides:nth-child(3) {
+    transform: translate(0);
+  }
+  .herocmt {
+    top: 50px;
+    left: 12px;
+    width: 100%;
+    height: 450px;
+  }
+  .text {
+    bottom: 30px;
+    right: 40px;
+  }
+  .herosub {
+    width: 100%;
+    margin-top: 0px;
+    position: absolute;
+    top: 550px;
+    z-index: 2;
+    padding: 0 !important;
+  }
+  .navForm {
+    padding: 40px 30px !important;
+  }
+  .beautyRoom {
+    height: 930px;
+  }
+  .imgRooms {
+    margin: 0px 25px;
+    height: 90%;
+    width: 85%;
+  }
+  .roomSlides:nth-child(2) {
+    transform: translateX(100%);
+  }
+  .roomDot {
+    left: 54%;
+    transform: translateY(472px);
+  }
+  .buttonsRoom button {
+    right: 10px;
+    transform: translateY(50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .tipSlides {
+    width: calc(100% - 23px);
+    transform: translateX(70px);
+  }
+  .beautyRoom {
+    height: 1070px;
+  }
+  .imgRooms {
+    margin: 0px 25px;
+    height: 113%;
+    width: 123%;
+  }
+  .roomSlides:nth-child(1) {
+    transform: translateX(-150%);
+    width: 380px;
+    height: 560px;
+  }
+  .roomSlides:nth-child(2) {
+    transform: translateX(0%);
+    width: 380px;
+    height: 560px;
+  }
+  .roomSlides:nth-child(3) {
+    transform: translateX(220%);
+    width: 380px;
+    height: 560px;
+  }
+  .roomSlides:nth-child(4) {
+    transform: translateX(300%);
+    width: 380px;
+    height: 560px;
+  }
+  .roomSlides:nth-child(2) .textR {
+    transform: translate(14%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 5;
+  }
+  .roomDot {
+    left: 34%;
+    transform: translateY(677px);
+  }
+  .buttonsRoom button {
+    display: none;
+  }
+  #btnOnTop {
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 423px) {
+  .heRo {
+    height: 1085px;
+  }
+  .beautyRoom {
+    height: 920px;
+  }
+  .roomDot {
+    left: 24%;
+    transform: translateY(510px);
+  }
+  .imgRooms {
+    margin: 0px 25px;
+    height: 83%;
+    width: 78%;
+  }
+  .tipSlides {
+    width: calc(100% - 23px);
+    transform: translateX(30px);
+  }
+  .imgTips {
+    width: calc(100% - 23px);
+    height: 250px;
+  }
+  .textTips {
+    width: calc(100% - 23px);
+  }
+
+  .herocmt {
+    top: 30px;
+    left: 12px;
+    width: calc(100% - 23px);
+    height: 430px;
+  }
+  .itemSlides {
+    width: calc(100% - 23px);
+    height: 450px;
+    top: 461px;
+  }
+  .herosub {
+    top: 480px;
+  }
+  .herosub {
+    transform: translateX(-20px);
+  }
+  .itemSlides:nth-child(2) .text {
+    width: 100%;
+    transform: translateY(69px);
+    right: 0px;
+    /* display: none; */
+  }
+
+  .text {
+    width: calc(100%);
+    right: 0;
+    transform: translateY(115%);
+  }
+
+  .dot {
+    font-size: 6px;
+    cursor: pointer;
+    padding: 2px 4px;
+    color: #d9d9d9;
+    display: inline-block;
+  }
+  .active {
+    border: 2px solid #e89f71;
+    border-radius: 50%;
+    color: #e89f71;
+  }
+  .slick-dots {
+    transform: translate(0%, 60px);
+  }
+
+  .slick-dots li button {
+    width: 7px;
+    height: 7px;
+  }
+}
+
+@media (max-width: 356px) {
+  .tipSlides {
+    width: calc(100%);
+    transform: translateX(0px);
+    padding-left: 8px;
+  }
+  .imgTips {
+    width: calc(100% - 23px);
+    height: 180px;
+  }
+  .textTips {
+    width: calc(100% - 23px);
+  }
+  .textTips p {
+    font-size: 15px !important;
+  }
+
+  .herocmt {
+    top: 30px;
+    left: 12px;
+    width: calc(100% - 23px);
+    height: 430px;
+  }
+  .itemSlides {
+    width: calc(100% - 23px);
+    height: 372px;
+    top: 461px;
+  }
+  .herosub {
+    top: 480px;
+  }
+  .herosub {
+    transform: translateX(-20px);
+  }
+  .itemSlides:nth-child(2) .text {
+    width: 100%;
+    transform: translateY(69px);
+    right: 0px;
+    /* display: none; */
+  }
+  .beautyRoom {
+    height: 1050px;
+  }
+  .roomDot {
+    left: 20%;
+    transform: translateY(0);
+  }
+  .imgRooms {
+    margin: 26px 0px;
+    height: 76%;
+    width: 67%;
+  }
+  .roomSlides:nth-child(2) .textR {
+    transform: translate(0);
+  }
+  .textR a {
+    right: 35px !important;
+  }
+  .textR {
+    bottom: -12px;
+    left: 0px;
+    width: 67%;
+    height: 103px;
+    padding: 33px !important;
+  }
+}

@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- flaticon icon -->
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" />
+  <!-- slick -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="./assets/style/bootstrap.min.css">
+
+  <!-- swiper css -->
+  <link rel="stylesheet" href="./assets/style/swiper-bundle.min.css" />
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css' rel='stylesheet'>
+
+  <!-- local css -->
+  <link rel="stylesheet" href="./assets/style/custom.css" />
+  <link rel="stylesheet" href="./assets/style/style.css" />
+  <link rel="stylesheet" href="./assets/style/responsive.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- Navabar section -->
+  <section class="navBar">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container navForm">
+          <a class="navbar-brand fw-bold" href="#">Funiro.</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <div class="navbar-toggler-icon"></div>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown px-3">
+                <a class="nav-link dropdown-toggle fw-medium" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Products
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown px-3">
+                <a class="nav-link dropdown-toggle fw-medium" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Rooms
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link fw-medium" href="#">Inspirations</a>
+              </li>
+              <li class="nav-item px-3">
+                <form class="d-flex position-relative" role="search">
+                  <input class="form-control px-5" type="search" placeholder="Search for minimalist chair"
+                    aria-label="Search">
+                  <button class="btn position-absolute top-0 start-0" type="submit"><i
+                      class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+              </li>
+            </ul>
+            <div class="avatar d-flex justify-content-center align-items-center">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-cart-shopping"></i>
+              <img src="./assets/image/avatar.png" alt="avatar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <!-- hero section -->
+  <section class="heRo container">
+    <div class="d-flex justify-content-lg-between justify-content-around herosub">
+      <div></div>
+      <div>
+        <div class="dot" onclick="currentDot(1)"><i class="fa-solid fa-circle"></i></div>
+        <div class="dot" onclick="currentDot(2)"><i class="fa-solid fa-circle"></i></div>
+        <div class="dot" onclick="currentDot(3)"><i class="fa-solid fa-circle"></i></div>
+        <div class="dot" onclick="currentDot(4)"><i class="fa-solid fa-circle"></i></div>
+        <div class="dot" onclick="currentDot(5)"><i class="fa-solid fa-circle"></i></div>
+      </div>
+      <div class="buttons">
+        <button id="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-chevron-left" id="autoPrev"></i></button>
+        <button id="next" onclick="plusSlides(1)"><i class="fa-solid fa-chevron-right" id="autoNext"></i></button>
+      </div>
+    </div>
+    <div class="herocmt">
+      <div class="heroblur d-flex justify-content-center align-items-center flex-column p-5 ">
+        <div class="fw-bold fs-1">High-Quality Furniture Just For You</div>
+        <div class="my-4">Our furniture is made from selected and
+          best quality materials that are suitable for your dream home</div>
+        <button class="buttonhero mt-4">Shop Now</button>
+      </div>
+    </div>
+    <div id="slide" class="slideshow">
+      <div class="itemSlides">
+        <div class="imgSlides">
+          <img src="./assets/image/hero5.png" alt="hero5notfound" onmousedown="posX1(event)" onmousemove="posY1(event)"
+            ontouchstart="posX(event)" ontouchmove="posY(event)">
+        </div>
+        <div class="text">
+          <h4>Bohauss</h4>
+          <div>Luxury big sofa 2-seat</div>
+          <div class="d-flex justify-content-between align-items-center">
+            <h5 class="mt-3">Rp 17.000.000</h5>
+            <a href=""><i class="fa-solid fa-arrow-right-long fw-bold fs-4"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="itemSlides">
+        <div class="imgSlides">
+          <img src="./assets/image/hero4.png" alt="hero4notfound" onmousedown="posX1(event)" onmousemove="posY1(event)"
+            ontouchstart="posX(event)" ontouchmove="posY(event)">
+        </div>
+        <div class="text">
+          <h4>Bohauss</h4>
+          <div>Luxury big sofa 2-seat</div>
+          <div class="d-flex justify-content-between align-items-center">
+            <h5 class="mt-3">Rp 17.000.000</h5>
+            <a href=""><i class="fa-solid fa-arrow-right-long fw-bold fs-4"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="itemSlides">
+        <div class="imgSlides">
+          <img src="./assets/image/hero1.png" alt="hero1notfound" onmousedown="posX1(event)" onmousemove="posY1(event)"
+            ontouchstart="posX(event)" ontouchmove="posY(event)">
+        </div>
+        <div class="text">
+          <h4>Bohauss</h4>
+          <div class="fs-5">Luxury big sofa 2-seat</div>
+          <div class="d-flex justify-content-between align-items-center">
+            <h5 class="mt-3">Rp 17.000.000</h5>
+            <a href=""><i class="fa-solid fa-arrow-right-long fw-bold fs-4"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="itemSlides">
+        <div class="imgSlides">
+          <img src="./assets/image/hero2.png" alt="hero2notfound" onmousedown="posX1(event)" onmousemove="posY1(event)"
+            ontouchstart="posX(event)" ontouchmove="posY(event)">
+        </div>
+        <div class="text">
+          <h4>Bohauss</h4>
+          <div class="fs-5">Luxury big sofa 2-seat</div>
+          <div class="d-flex justify-content-between align-items-center">
+            <h5 class="mt-3">Rp 17.000.000</h5>
+            <a href=""><i class="fa-solid fa-arrow-right-long fw-bold fs-4"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="itemSlides">
+        <div class="imgSlides">
+          <img src="./assets/image/hero3.png" alt="hero3notfound" onmousedown="posX1(event)" onmousemove="posY1(event)"
+            ontouchstart="posX(event)" ontouchmove="posY(event)">
+        </div>
+        <div class="text">
+          <h4>Bohauss</h4>
+          <div class="fs-5">Luxury big sofa 2-seat</div>
+          <div class="d-flex justify-content-between align-items-center">
+            <h5 class="mt-3">Rp 17.000.000</h5>
+            <a href=""><i class="fa-solid fa-arrow-right-long fw-bold fs-4"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- marquette section -->
+  <section class="marquette my-5">
+    <div class="container">
+      <div class="row">
+        <div class="marquette-cont | col-12 d-flex flex-row gap-2 justify-content-between flex-wrap">
+          <div class="marquette-item | d-flex flex-column flex-lg-row gap-2 gap-lg-3">
+            <i class="fi fi-rr-trophy"></i>
+            <div class="caption">
+              <p class="d-block text-main fs-250 fw-semi-bold my-0">
+                High Quality
+              </p>
+              <small class="text-main-100 fs-200 fw-medium">crafted from top materials</small>
+            </div>
+          </div>
+          <div class="marquette-item d-flex flex-column flex-lg-row gap-2 gap-lg-3 align-items-center">
+            <i class="fi fi-rr-badge-check"></i>
+            <div class="caption">
+              <p class="d-block text-main fs-250 fw-semi-bold my-0">
+                Warrany Protection
+              </p>
+              <small class="text-main-100 fs-200 fw-medium">Over 2 years</small>
+            </div>
+          </div>
+          <div class="marquette-item d-flex flex-column flex-lg-row gap-2 gap-lg-3 align-items-center">
+            <i class="fi fi-rr-truck-side"></i>
+            <div class="caption">
+              <p class="d-block text-main fs-250 fw-semi-bold my-0">
+                Free Shipping
+              </p>
+              <small class="text-main-100 fs-200 fw-medium">Order over 150 $</small>
+            </div>
+          </div>
+          <div class="marquette-item d-flex flex-column flex-lg-row gap-2 gap-lg-3 align-items-center">
+            <i class="fi fi-rr-headset"></i>
+            <div class="caption">
+              <p class="d-block text-main fs-250 fw-semi-bold my-0">
+                24 / 7 Support
+              </p>
+              <small class="text-main-100 fs-200 fw-medium">Dedicated support</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal fade" id="myModal" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close fs-300" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/image/check.webp" alt="">
+          <h2 class="fs-300 fw-semi-bold text-main-200 text-center my-3">Your item has been added to cart succesfully!
+          </h2>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info px-3 py-2 fw-medium" data-bs-dismiss="modal">Keep shopping</button>
+          <button type="button" class="btn btn-outline-secondary px-4 py-2 fw-medium">Purchase</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- product section -->
+  <section class="products">
+    <div class="container">
+      <div class="row">
+        <h2 class="col-12 fs-600 fw-bold text-main text-center mt-4">
+          Our Products
+        </h2>
+      </div>
+      <div class="swiper mySwiper" id="swiperClass">
+        <div class="product-cont swiper-wrapper mb-3" id="swiperWrapperClass">
+          <div class="product-item swiper-slide | pb-3">
+            <div class="layer-1">
+              <div class="layer-2 | d-flex flex-column align-items-center justify-content-center">
+                <button type="button" class="add-to-card | fs-200 fw-semi-bold mb-4" data-bs-toggle="modal"
+                  data-bs-target="#myModal">
+                  Add to cart
+                </button>
+                <div
+                  class="interact | container d-flex flex-row justify-content-around fs-200 fw-semi-bold text-accent-200">
+                  <div class="interact-item interact-item-1 d-flex flex-row gap-2 align-items-center">
+                    <i class="fi fi-rr-cloud-share"></i>
+                    <p>Share</p>
+                  </div>
+                  <div class="interact-item interact-item-2 d-flex flex-row gap-2 align-items-center">
+                    <i class="fi fi-rr-heart d-block"></i>
+                    <p>Like</p>
+                  </div>
+                </div>
+              </div>
+              <img src="./assets/image/product-1.png" alt="" />
+              <div class="product-info mx-3">
+                <p class="text-main fs-400 fw-semi-bold my-1 mt-2">
+                  Syltherine
+                </p>
+                <p class="fs-200 fw-medium text-main-100 my-1">
+                  Stylish cafe chair
+                </p>
+                <div class="price-cont d-flex justify-content-between flex-row align-items-center">
+                  <p class="text-main fs-300 fw-semi-bold">Rp 2.500.000</p>
+                  <p class="fs-200 fw-regular text-main-50 text-decoration-line-through">
+                    Rp 3.500.000
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item swiper-slide | pb-3">
+            <div class="layer-1 layer-1-none">
+              <div class="layer-2 | d-flex flex-column align-items-center justify-content-center">
+                <button class="add-to-card | fs-200 fw-semi-bold mb-4" data-bs-toggle="modal" data-bs-target="#myModal">
+                  Add to cart
+                </button>
+                <div
+                  class="interact | container d-flex flex-row justify-content-around fs-200 fw-semi-bold text-accent-200">
+                  <div class="interact-item interact-item-1 d-flex flex-row gap-2 align-items-center">
+                    <i class="fi fi-rr-cloud-share"></i>
+                    <p>Share</p>
+                  </div>
+                  <div class="interact-item interact-item-2 d-flex flex-row gap-2 align-items-center">
+                    <i class="fi fi-rr-heart d-block"></i>
+                    <p>Like</p>
+                  </div>
+                </div>
+              </div>
+              <img src="./assets/image/product-2.png" alt="" />
+              <div class="product-info mx-3">
+                <p class="text-main fs-400 fw-semi-bold my-1 mt-2">
+                  Leviosa
+                </p>
+                <p class="fs-200 fw-medium text-main-100 my-1">
+                  Stylish cafe chair
+                </p>
+                <div class="price-cont d-flex justify-content-start flex-row">
+                  <p class="text-main fs-300 fw-semi-bold">Rp 2.500.000</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item swiper-slide | pb-3">
+            <div class="layer-1 layer-1-50">
+              <div class="layer-2 | d-flex flex-column align-items-center justify-content-center">
+                <button class="add-to-card | fs-200 fw-semi-bold mb-4" data-bs-toggle="modal" data-bs-target="#myModal">
+                  Add to cart
+                </button>
+                <div
+                  class="interact | container d-flex flex-row justify-content-around fs-200 fw-semi-bold text-accent-200">
+                  <div class="interact-item interact-item-1 d-flex flex-row gap-2 align-items-center">
+                    <i class="fi fi-rr-cloud-share"></i>
+                    <p>Share</p>
+                  </div>
+                  <div class="interact-item interact-item-2 d-flex flex-row gap-2 align-items-center">
+                    <i class="fi fi-rr-heart d-block"></i>
+                    <p>Like</p>
+                  </div>
+                </div>
+              </div>
+              <img src="./assets/image/product-3.png" alt="" />
+              <div class="product-info mx-3">
+                <p class="text-main fs-400 fw-semi-bold my-1 mt-2">
+                  Lolito
+                </p>
+                <p class="fs-200 fw-medium text-main-100 my-1">
+                  Luxury big sofa
+                </p>
+                <div class="price-cont d-flex justify-content-between align-items-center flex-row">
+                  <p class="text-main fs-300 fw-semi-bold">Rp 7.000.000</p>
+                  <p class="fs-200 fw-regular text-main-50 text-decoration-line-through">
+                    Rp 14.000.000
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item swiper-slide | pb-3">
+            <div class="layer-1 layer-1-new">
+              <div class="layer-2 | d-flex flex-column align-items-center justify-content-center">
+                <button class="add-to-card | fs-200 fw-semi-bold mb-4" data-bs-toggle="modal" data-bs-target="#myModal">
+                  Add to cart
+                </button>
+                <div
+                  class="interact | container d-flex flex-row justify-content-around fs-200 fw-semi-bold text-accent-200">
+                  <div class="interact-item interact-item-1 d-flex flex-row gap-2 align-items-center">
+                    <i class="fi fi-rr-cloud-share"></i>
+                    <p>Share</p>
+                  </div>
+                  <div class="interact-item interact-item-2 d-flex flex-row gap-2 align-items-center">
+                    <i class="fi fi-rr-heart d-block"></i>
+                    <p>Like</p>
+                  </div>
+                </div>
+              </div>
+              <img src="./assets/image/product-4.png" alt="" />
+              <div class="product-info mx-3">
+                <p class="text-main fs-400 fw-semi-bold my-1 mt-2">
+                  Respira
+                </p>
+                <p class="fs-200 fw-medium text-main-100 my-1">
+                  Minimalist fan
+                </p>
+                <div class="price-cont d-flex justify-content-start flex-row">
+                  <p class="text-main fs-300 fw-semi-bold">Rp 500.000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item swiper-slide | pb-3">
+            <div class="layer-1 layer-1-none">
+              <div class="layer-2 | d-flex flex-column align-items-center justify-content-center">
+                <button class="add-to-card | fs-200 fw-semi-bold mb-4" data-bs-toggle="modal" data-bs-target="#myModal">
+                  Add to cart
+                </button>
+                <div
+                  class="interact | container d-flex flex-row justify-content-around fs-200 fw-semi-bold text-accent-200">
+                  <div class="interact-item interact-item-1 d-flex flex-row gap-2 align-items-center">
+                    <i class="fi fi-rr-cloud-share"></i>
+                    <p>Share</p>
+                  </div>
+                  <div class="interact-item interact-item-2 d-flex flex-row gap-2 align-items-center">
+                    <i class="fi fi-rr-heart d-block"></i>
+                    <p>Like</p>
+                  </div>
+                </div>
+              </div>
+              <img src="./assets/image/product-5.png" alt="" />
+              <div class="product-info mx-3">
+                <p class="text-main fs-400 fw-semi-bold my-1 mt-2">
+                  Grifo
+                </p>
+                <p class="fs-200 fw-medium text-main-100 my-1">
+                  Night lamp
+                </p>
+                <div class="price-cont d-flex justify-content-start flex-row">
+                  <p class="text-main fs-300 fw-semi-bold">Rp 1.500.000</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class=" product-item swiper-slide | pb-3">
+            <div class="layer-1 layer-1-new">
+              <div class="layer-2 | d-flex flex-column align-items-center justify-content-center">
+                <button class="add-to-card | fs-200 fw-semi-bold mb-4" data-bs-toggle="modal" data-bs-target="#myModal">
+                  Add to cart
+                </button>
+                <div
+                  class="interact | container d-flex flex-row justify-content-around fs-200 fw-semi-bold text-accent-200">
+                  <div class="interact-item interact-item-1 d-flex flex-row gap-2 align-items-center">
+                    <i class="fi fi-rr-cloud-share"></i>
+                    <p>Share</p>
+                  </div>
+                  <div class="interact-item interact-item-2 d-flex flex-row gap-2 align-items-center">
+                    <i class="fi fi-rr-heart d-block"></i>
+                    <p>Like</p>
+                  </div>
+                </div>
+              </div>
+              <img src="./assets/image/product-6.png" alt="" />
+              <div class="product-info mx-3">
+                <p class="text-main fs-400 fw-semi-bold my-1 mt-2">
+                  Muggo
+                </p>
+                <p class="fs-200 fw-medium text-main-100 my-1">
+                  Small mug
+                </p>
+                <div class="price-cont d-flex justify-content-start flex-row">
+                  <p class="text-main fs-300 fw-semi-bold">Rp 150.000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class=" product-item swiper-slide | pb-3">
+            <div class="layer-1 layer-1-50">
+              <div class="layer-2 | d-flex flex-column align-items-center justify-content-center">
+                <button class="add-to-card | fs-200 fw-semi-bold mb-4" data-bs-toggle="modal" data-bs-target="#myModal">
+                  Add to cart
+                </button>
+                <div
+                  class="interact | container d-flex flex-row justify-content-around fs-200 fw-semi-bold text-accent-200">
+                  <div class="interact-item interact-item-1 d-flex flex-row gap-2 align-items-center">
+                    <i class="fi fi-rr-cloud-share"></i>
+                    <p>Share</p>
+                  </div>
+                  <div class="interact-item interact-item-2 d-flex flex-row gap-2 align-items-center">
+                    <i class="fi fi-rr-heart d-block"></i>
+                    <p>Like</p>
+                  </div>
+                </div>
+              </div>
+              <img src="./assets/image/product-7.png" alt="" />
+              <div class="product-info mx-3">
+                <p class="text-main fs-400 fw-semi-bold my-1 mt-2">
+                  Pingky
+                </p>
+                <p class="fs-200 fw-medium text-main-100 my-1">
+                  Cute bed set
+                </p>
+                <div class="price-cont d-flex justify-content-between flex-row align-items-center">
+                  <p class="text-main fs-300 fw-semi-bold">Rp 7.000.000</p>
+                  <p class="fs-200 fw-regular text-main-50 text-decoration-line-through">
+                    Rp 14.000.000
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class=" product-item swiper-slide | pb-3">
+            <div class="layer-1 layer-1-new">
+              <div class="layer-2 | d-flex flex-column align-items-center justify-content-center">
+                <button class="add-to-card | fs-200 fw-semi-bold mb-4" data-bs-toggle="modal" data-bs-target="#myModal">
+                  Add to cart
+                </button>
+                <div
+                  class="interact | container d-flex flex-row justify-content-around fs-200 fw-semi-bold text-accent-200">
+                  <div class="interact-item interact-item-1 d-flex flex-row gap-2 align-items-center">
+                    <i class="fi fi-rr-cloud-share"></i>
+                    <p>Share</p>
+                  </div>
+                  <div class="interact-item interact-item-2 d-flex flex-row gap-2 align-items-center">
+                    <i class="fi fi-rr-heart d-block"></i>
+                    <p>Like</p>
+                  </div>
+                </div>
+              </div>
+              <img src="./assets/image/product-8.png" alt="" />
+              <div class="product-info mx-3">
+                <p class="text-main fs-400 fw-semi-bold my-1 mt-2">
+                  Potty
+                </p>
+                <p class="fs-200 fw-medium text-main-100 my-1">
+                  Minimalist flower pot
+                </p>
+                <div class="price-cont d-flex justify-content-start flex-row">
+                  <p class="text-main fs-300 fw-semi-bold">Rp 500.000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item swiper-slide | pb-3">
+            <div class="layer-1">
+              <div class="layer-2 | d-flex flex-column align-items-center justify-content-center">
+                <button class="add-to-card | fs-200 fw-semi-bold mb-4" data-bs-toggle="modal" data-bs-target="#myModal">
+                  Add to cart
+                </button>
+                <div
+                  class="interact | container d-flex flex-row justify-content-around fs-200 fw-semi-bold text-accent-200">
+                  <div class="interact-item interact-item-1 d-flex flex-row gap-2 align-items-center">
+                    <i class="fi fi-rr-cloud-share"></i>
+                    <p>Share</p>
+                  </div>
+                  <div class="interact-item interact-item-2 d-flex flex-row gap-2 align-items-center">
+                    <i class="fi fi-rr-heart d-block"></i>
+                    <p>Like</p>
+                  </div>
+                </div>
+              </div>
+              <img src="./assets/image/product-1.png" alt="" />
+              <div class="product-info mx-3">
+                <p class="text-main fs-400 fw-semi-bold my-1 mt-2">
+                  Syltherine
+                </p>
+                <p class="fs-200 fw-medium text-main-100 my-1">
+                  Stylish cafe chair
+                </p>
+                <div class="price-cont d-flex justify-content-between flex-row">
+                  <p class="text-main fs-300 fw-semi-bold">Rp 2.500.000</p>
+                  <p class="fs-200 fw-regular text-main-50 text-decoration-line-through">
+                    Rp 3.500.000
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-next swiper-navBtn" id="buttonNext"></div>
+        <div class="swiper-button-prev swiper-navBtn" id="buttonPrev"></div>
+        <div class="swiper-pagination" id="pagination"></div>
+      </div>
+    </div>
+
+    <div class=" container d-flex justify-content-center my-4">
+      <button class="product-btn rounded-0 fs-200 fw-semi-bold ">Show More</button>
+    </div>
+  </section>
+
+  <!-- BeautyRoom section -->
+  <section class="beautyRoom container my-5">
+    <div class=" row my-5">
+      <div class="beautyCmt col-12 col-lg-4 d-flex justify-content-center align-items-start flex-column px-5">
+        <h1 class="fw-bolder my-3">50+ Beautiful rooms inspiration</h1>
+        <div class="fs-5 fw-normal mb-4">Our designer already made a lot of beautiful prototipe of rooms that
+          inspire
+          you</div>
+        <button class="py-3 px-5">Explore More</button>
+      </div>
+      <div class="picsRoom col-12 col-lg-8">
+        <div id="slid" class="slideshowRoom">
+          <div class="roomSlides">
+            <div class="imgRooms">
+              <img src="./assets/image/room1.png" alt="room1notfound" onmousedown="posX2(event)"
+                onmousemove="posY2(event)" ontouchstart="posX3(event)" ontouchmove="posY3(event)">
+            </div>
+            <div class="textR p-4 position-relative">
+              <div class="fw-regular ">01 - Bed Room</div>
+              <h4 class="fw-bold pt-2">Inner Peace</h4>
+              <a href="" class="position-absolute bottom-0 end-0"><i
+                  class="fa-solid fa-arrow-right-long fw-bold fs-5 p-2"></i></a>
+            </div>
+          </div>
+          <div class="roomSlides">
+            <div class="imgRooms">
+              <img src="./assets/image/room2.png" alt="room2notfound" onmousedown="posX2(event)"
+                onmousemove="posY2(event)" ontouchstart="posX3(event)" ontouchmove="posY3(event)">
+            </div>
+            <div class="textR p-4 position-relative">
+              <div class="fw-regular ">01 - Bed Room</div>
+              <h4 class="fw-bold pt-2">Inner Peace</h4>
+              <a href="" class="position-absolute bottom-0 end-0"><i
+                  class="fa-solid fa-arrow-right-long fw-bold fs-5 p-2"></i></a>
+            </div>
+          </div>
+          <div class="roomSlides">
+            <div class="imgRooms">
+              <img src="./assets/image/room3.png" alt="room3notfound" onmousedown="posX2(event)"
+                onmousemove="posY2(event)" ontouchstart="posX3(event)" ontouchmove="posY3(event)">
+            </div>
+            <div class="textR p-4 position-relative">
+              <div class="fw-regular ">01 - Bed Room</div>
+              <h4 class="fw-bold pt-2">Inner Peace</h4>
+              <a href="" class="position-absolute bottom-0 end-0"><i
+                  class="fa-solid fa-arrow-right-long fw-bold fs-5 p-2"></i></a>
+            </div>
+          </div>
+          <div class="roomSlides">
+            <div class="imgRooms">
+              <img src="./assets/image/room4.png" alt="room4notfound" onmousedown="posX2(event)"
+                onmousemove="posY2(event)" ontouchstart="posX3(event)" ontouchmove="posY3(event)">
+            </div>
+            <div class="textR p-4 position-relative">
+              <div class="fw-regular ">01 - Bed Room</div>
+              <h4 class="fw-bold pt-2">Inner Peace</h4>
+              <a href="" class="position-absolute bottom-0 end-0"><i
+                  class="fa-solid fa-arrow-right-long fw-bold fs-5 p-2"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="buttonsRoom">
+          <button id="prevR" onclick="plusRoom(-1)"><i class="fa-solid fa-chevron-right" id="autoPrevr"></i></button>
+          <button id="nextR" onclick="plusRoom(1)"><i class="fa-solid fa-chevron-right" id="autoNextr"></i></button>
+        </div>
+        <div class="dotClass">
+          <div class="roomDot"><i class="fa-solid fa-circle"></i>
+          </div>
+          <div class="roomDot"><i class="fa-solid fa-circle"></i>
+          </div>
+          <div class="roomDot"><i class="fa-solid fa-circle"></i>
+          </div>
+          <div class="roomDot"><i class="fa-solid fa-circle"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- BeautyRoom section -->
+
+  <!-- tips section -->
+  <section class="tips_tricks container">
+    <h1 class="fw-bolder d-flex justify-content-center m-5">Tips & Tricks</h1>
+    <div class="tipSlides ">
+      <div class="tipTabs">
+        <div class="imgTips">
+          <img src="./assets/image/tip1.png" alt="tip1notfound">
+        </div>
+        <div class="textTips d-flex justify-content-center flex-column">
+          <p class="h4 fw-semibold">How to create a living <br> room to love</p>
+          <P class="fw-medium text-light-emphasis">20 jan 2020</P>
+        </div>
+      </div>
+      <div class="tipTabs">
+        <div class="imgTips">
+          <img src="./assets/image/tip2.png" alt="tip2notfound">
+        </div>
+        <div class="textTips d-flex justify-content-center flex-column">
+          <p class="h4 fw-semibold">Solution for clean look working space</p>
+          <P class="fw-medium text-light-emphasis">10 jan 2020</P>
+        </div>
+      </div>
+      <div class="tipTabs">
+        <div class="imgTips">
+          <img src="./assets/image/tip3.png" alt="tip3notfound">
+        </div>
+        <div class="textTips d-flex justify-content-center flex-column">
+          <p class="h4 fw-semibold">Make your cooking activity
+            more fun with good setup</p>
+          <P class="fw-medium text-light-emphasis">22 jan 2020</P>
+        </div>
+      </div>
+      <div class="tipTabs">
+        <div class="imgTips">
+          <img src="./assets/image/tip4.png" alt="tip4notfound">
+        </div>
+        <div class="textTips d-flex justify-content-center flex-column">
+          <p class="h4 fw-semibold">How to create a living <br> room to love</p>
+          <P class="fw-medium text-light-emphasis">15 jan 2020</P>
+        </div>
+      </div>
+      <div class="tipTabs">
+        <div class="imgTips">
+          <img src="./assets/image/tip5.png" alt="tip5notfound">
+        </div>
+        <div class="textTips d-flex justify-content-center flex-column">
+          <p class="h4 fw-semibold">Solution for clean look working space</p>
+          <P class="fw-medium text-light-emphasis">19 jan 2020</P>
+        </div>
+      </div>
+      <div class="tipTabs">
+        <div class="imgTips">
+          <img src="./assets/image/tip6.png" alt="tip6notfound">
+        </div>
+        <div class="textTips d-flex justify-content-center flex-column">
+          <p class="h4 fw-semibold">Make your cooking activity
+            more fun with good setup</p>
+          <P class="fw-medium text-light-emphasis">24 jan 2020</P>
+        </div>
+      </div>
+      <div class="tipTabs">
+        <div class="imgTips">
+          <img src="./assets/image/tip7.png" alt="tip7notfound">
+        </div>
+        <div class="textTips d-flex justify-content-center flex-column">
+          <p class="h4 fw-semibold">How to create a living <br> room to love</p>
+          <P class="fw-medium text-light-emphasis">06 jan 2020</P>
+        </div>
+      </div>
+      <div class="tipTabs">
+        <div class="imgTips">
+          <img src="./assets/image/tip8.png" alt="tip8notfound">
+        </div>
+        <div class="textTips d-flex justify-content-center flex-column">
+          <p class="h4 fw-semibold">Solution for clean look working space</p>
+          <P class="fw-medium text-light-emphasis">26 jan 2020</P>
+        </div>
+      </div>
+      <div class="tipTabs">
+        <div class="imgTips">
+          <img src="./assets/image/tip9.png" alt="tip9notfound">
+        </div>
+        <div class="textTips d-flex justify-content-center flex-column">
+          <p class="h4 fw-semibold">Make your cooking activity
+            more fun with good setup</p>
+          <P class="fw-medium text-light-emphasis">14 jan 2020</P>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- tips section -->
+
+  <!-- gallery section -->
+  <section class="gallery my-5">
+    <div class="container-fluid">
+      <div class="gallery-title">
+        <p class="fs-300 fw-semi-bold text-main-200 text-center mb-1">Share your setup with</p>
+        <h3 class="fs-600 fw-bold text-main text-center mb-3">#FuniroFurniture</h3>
+      </div>
+      <div class="gallery-cont row row-cols-auto gx-3">
+        <div class="gallery-1 col">
+          <div class="gallery-11 d-flex justify-content-between flex-row align-items-end gap-4">
+            <div class="gallery-11-item">
+              <figure class="img-container"><img src="./assets/image/fur-1.png" alt="">
+
+                <figcaption class="img-content">
+                  <h4 class="img-content-review fs-200 fw-semi-bold text-main">Great place for my plant</h4>
+                  <h5 class="img-content-users fs-100 fw-medium text-main-200">@J**n</h5>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="gallery-11-item">
+              <figure class="img-container">
+                <img src="./assets/image/fur-2.png" alt="">
+                <figcaption class="img-content">
+                  <h4 class="img-content-review fs-200 fw-semi-bold text-main">Minimal workhub</h4>
+                  <h5 class="img-content-users fs-100 fw-medium text-main-200">@T**m</h5>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="gallery-12 d-flex justify-content-between gap-4 flex-row align-items-start">
+            <div class="gallery-12-item">
+              <figure class="img-container"><img src="./assets/image/fur-3.png" alt="">
+                <figcaption class="img-content">
+                  <h4 class="img-content-review fs-200 fw-semi-bold text-main">My favorite chair, <br> my favorite
+                    corner</h4>
+                  <h5 class="img-content-users fs-100 fw-medium text-main-200">@M**an</h5>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="gallery-12-item">
+              <figure class="img-container"><img src="./assets/image/fur-4.png" alt="">
+                <figcaption class="img-content">
+                  <h4 class="img-content-review fs-200 fw-semi-bold text-main">My plant's shelter</h4>
+                  <h5 class="img-content-users fs-100 fw-medium text-main-200">@S*m</h5>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="col gallery-2">
+          <div class="gallery-2-item">
+            <figure class="img-container"><img src="./assets/image/fur-5.png" alt="">
+              <figcaption class="img-content">
+                <h4 class="img-content-review fs-200 fw-semi-bold text-main">Cozy dining room, love it!</h4>
+                <h5 class="img-content-users fs-100 fw-medium text-main-200">@L**y</h5>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="gallery-3 col">
+          <div class="gallery-31 d-flex justify-content-between flex-row align-items-end gap-4">
+            <div class="gallery-31-item">
+              <figure class="img-container"><img src="./assets/image/fur-6.png" alt="">
+
+                <figcaption class="img-content">
+                  <h4 class="img-content-review fs-200 fw-semi-bold text-main">My healing temple</h4>
+                  <h5 class="img-content-users fs-100 fw-medium text-main-200">@R**k</h5>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="gallery-31-item">
+              <figure class="img-container">
+                <img src="./assets/image/fur-7.png" alt="">
+                <figcaption class="img-content">
+                  <h4 class="img-content-review fs-200 fw-semi-bold text-main">My family just <br> love these!</h4>
+                  <h5 class="img-content-users fs-100 fw-medium text-main-200">@B**y</h5>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="gallery-32 d-flex justify-content-between flex-row align-items-start">
+            <div class="gallery-32-item">
+              <figure class="img-container"><img src="./assets/image/fur-8.png" alt="">
+                <figcaption class="img-content">
+                  <h4 class="img-content-review fs-200 fw-semi-bold text-main">Thank you, I adore the <br> minimalism
+                    concept</h4>
+                  <h5 class="img-content-users fs-100 fw-medium text-main-200">@R**n</h5>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="gallery-32-item">
+              <figure class="img-container"><img src="./assets/image/fur-9.png" alt="">
+                <figcaption class="img-content ">
+                  <h4 class="img-content-review fs-200 fw-semi-bold text-main">Seriously, this is my <br> dream kitchen!
+                  </h4>
+                  <h5 class="img-content-users fs-100 fw-medium text-main-200">@Ky**e</h5>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    </div>
+  </section>
+
+  <!-- footer section -->
+  <footer>
+    <div class="footer-cont | container">
+      <div class="row">
+        <div class="col-12 col-lg-3 my-3">
+          <h5 class=" text-main fw-bold fs-400">Funiro.</h5>
+          <p class="text-main-200 fs-200 fw-regular my-3">Worldwide furniture store since 2020. We sell over 1000+
+            branded products on our website</p>
+          <div class="footer-icon | fs-200 text-main-200 fw-regular d-flex justify-content-start flex-row gap-2">
+            <i class="fi fi-rr-marker"></i>
+            <p>Sawojajar Malang, Indonesia</p>
+          </div>
+          <div class="footer-icon | fs-200 text-main-200 fw-regular d-flex justify-content-start flex-row gap-2">
+            <i class="fi fi-rr-phone-flip"></i>
+
+            <p>+6289 456 3455</p>
+          </div>
+          <p class="text-main-200 fs-200 fw-regular">www.funiro.com</p>
+        </div>
+        <div class="col-6 col-lg-2 my-3">
+          <h5 class=" text-main fw-bold fs-400">Menu</h5>
+          <p class="fs-200 fw-medium text-main-200 my-4">Products</p>
+          <p class="fs-200 fw-medium text-main-200">Rooms</p>
+          <p class="fs-200 fw-medium text-main-200 my-4">Inspiration</p>
+          <p class="fs-200 fw-medium text-main-200">About Us</p>
+          <p class="fs-200 fw-medium text-main-200 mt-4">Terms & Policy</p>
+        </div>
+        <div class="col-6 col-lg-2 my-3">
+          <h5 class=" text-main fw-bold fs-400">Account</h5>
+          <p class="fs-200 fw-medium text-main-200 my-4">My Account</p>
+          <p class="fs-200 fw-medium text-main-200 my-4">Checkout</p>
+          <p class="fs-200 fw-medium text-main-200 my-4">My Cart</p>
+          <p class="fs-200 fw-medium text-main-200 my-4">My Catalog</p>
+        </div>
+        <div class="col-6 col-lg-2 my-3">
+          <h5 class=" text-main fw-bold fs-400">Stay Connected</h5>
+          <p class="fs-200 fw-medium text-main-200 my-4">Facebook</p>
+          <p class="fs-200 fw-medium text-main-200 my-4">Instagram</p>
+          <p class="fs-200 fw-medium text-main-200 my-4">Twitter</p>
+        </div>
+        <div class="col-6 col-lg-3 my-3">
+          <h5 class=" text-main fw-bold fs-400">Stay Updated</h5>
+          <div class="footer-input d-flex flex-row justify-content-start align-items-center gap-1 my-4">
+            <input type="email" class="form-control rounded-0" placeholder="Enter your email">
+            <i class="fi fi-rr-paper-plane"></i>
+          </div>
+
+        </div>
+      </div>
+  </footer>
+  <!-- push on top -->
+  <button onclick="topFunction()" id="btnOnTop" title="Go to top"><i
+      class="colorbutontop fa-solid fa-arrow-up"></i></button>
+  <!-- push on top -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <!-- bootstrap -->
+  <script src="./assets/JS/bootstrap.min.js"></script>
+  <script src="./assets/JS/bootstrap.bundle.min.js"></script>
+  <!-- bootstrap -->
+  <!-- swiper JS -->
+  <script src="./assets/JS/swiper-bundle.min.js"></script>
+  <!-- swiper JS -->
+
+  <script src="./assets/JS/index.js"></script>
+
+  <!-- slick -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- slick -->
+</body>
+
+</html>
